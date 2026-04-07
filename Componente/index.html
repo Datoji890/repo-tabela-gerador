@@ -1,35 +1,39 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style-teste.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     
-<section class="section">
+    <div class="container">
+        <!--Texto-->
+    <div class="content">        
+        
+        <p class="main-text" id="text">
+        Uma conta digital completa para sua vida render mais
+        </p>
 
+        <!--Imagem-->
+    <img src="/image/img-mobile.webp" class="img" alt="background-image" />
+    
+    </div>
 
-<div class="overlay">
-
-    <h1 id="texto">Uma conta digital completa para a sua vida render mais</h1>
-
-</div>
-
-
-
+    <!--INPUT + BOTÃO-->
+    <div class="acoes">
+        
+        <input type="text" id="campo_input" placeholder="Digite seu texto aqui" />
+        
+        <button id="btn" disabled>Trocar texto</button>
+    
+    </div>
+    
 </section>
-
-<div class="card">
-
-    <input type="text" id="inputTexto" placeholder="Digite seu texto aqui">
-    <button id="btnTrocar" disable>Trocar texto</button>
-
-</div>
-
-
-<script src="scrips.js"></script>
+    
+    
+        <script src="java.js"></script>
 
 </body>
 </html>
