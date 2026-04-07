@@ -1,30 +1,29 @@
-const input = document.getElementById("campo_input");
-const botao = document.getElementById("btn");
-const texto = document.getElementById("text");
+const input = document.getElementById("inputTexto")
 
-// Habilitar botão ao digitar
+const botao = document.getElementById("btnTrocar")
 
-input.addEventListener("input", () => {
+const texto = document.getElementById("texto")
 
-if (input.value.trim() !== "") {
+//habilitar botão ao digitar
 
-    botao.disabled = false;
+input.addEventListener("input", () =>{
+    if (input.value.trim() !== ""){
 
-} else {
+        botao.disable = false;
+    } else{
 
-    botao.disabled = true;
-
-}
-
+        botao.disable = true;
+    }
 });
 
-// Clique no botão
+
+
+//Clique no botão
+
 botao.addEventListener("click", () => {
+    texto.textContent = input.value,
 
-  texto.textContent = input.value; // troca texto
+    input.value = "";
 
-  input.value = ""; // limpa input
-
-  botao.disabled = true; // desativa botão
-
+    botao.disable = true;
 });
