@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a84c6;
+}
+
+.hero {
+    min-height: 100vh;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
+}
+
+/* IMAGEM DE FUNDO COM PICTURE */
+.hero_background {
+    position: absolute;
+    inset: 0;
+}
+
+.hero_background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        align-items: flex-end; 
+        
+    }
+
+    .hero_form {
+        margin: 100px auto 50px;
+        width: 95%;
+    }
+}
