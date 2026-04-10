@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componente-input</title>
+    <link rel="stylesheet" href="GerText.css"/>
+    
+</head>
+<body>
+   <section class="hero">
+
+    <picture class="hero_background">
+        <!-- Desktop -->
+        <source media="(min-width: 769px)" srcset="/image/background_desktop.webp">
+        <!-- Mobile -->
+        <img src="/image/img-mobile.webp" alt="Background">
+    </picture>
+
+    <div class="hero_content">
+        <div class="hero_title">
+            <h1 id="texto">
+                Uma conta digital completa para a sua vida render mais
+            </h1>
+        </div>
+
+        <div class="hero_form">
+            <input type="text" id="inputTexto" placeholder="Digite seu texto aqui">
+            <button id="btnTrocar" disabled>Trocar texto</button>
+        </div>
+    </div>
+
+</section>
+
+    <script src="GerText.js"></script>
+
+</body>
+</html>
